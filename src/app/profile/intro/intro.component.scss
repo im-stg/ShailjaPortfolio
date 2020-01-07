@@ -1,0 +1,22 @@
+
+    section div p{
+        color: #3f51b5;
+        font-size: 30px;
+        /* text-shadow: 2px 3px 5px rgb(201, 198, 198); */
+        // margin: 30px 0;
+        text-align: center;
+        
+    }
+    
+    section div + p{
+        color: #737fc4;
+        font-weight: bold;
+        font-size: 20px;
+        // padding-bottom: 10px;
+        
+    }
+
+    // .h1{ font-size:22px; font-style: normal; color:#b45353;
+    //     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    //     margin-top: 2px;  text-align: center;    
+    // }
