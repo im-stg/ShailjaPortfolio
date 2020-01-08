@@ -6,29 +6,30 @@
               <div class="col-md-9">
                   <h3>Lets connect! Would love to hear about your project ideas or thoughts what we might build together!</h3>
                   
-                  <section id="contact" class="contact-section">
+                  <section id="contact" class="contact-section" >
                     
                               <div class="contact-form">
-                              <form method="POST" action="https://formspree.io/mvozjeav">
-                                <input
-                                  type="email"
-                                  name="_replyto"
+                              <form [formGroup]="contactForm">
+                                <input  matInput type="email" name="myEmail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required formControlName="Email" #Email ngDefaultControl 
                                   placeholder="Your email"
                                   class="bgcolor"
                                   required
                                 />
-                                <textarea
+                                <textarea matInput formControlName="Description" #Description ngDefaultControl
                                   name="message"
                                   placeholder="Your message"
                                   class="bgcolor"
                                   required
                                 ></textarea>
-                                <button type="submit" class="bgcolor">Send Message</button>
+                                <button type="submit"  class="bgcolor"  (click)="sendData( 
+                                   Description.value, Email.value);"  >Send Message</button>
+
                               </form>
                             </div>
-                          </section>
-              
-                </div>
+                          </section>  
+                         
+      
+      </div>
               </div>
        </div>
      
