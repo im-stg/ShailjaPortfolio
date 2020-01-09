@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule, } from '@angular/forms';
 import { MatTabsModule, MatSidenavModule, MatCardModule, MatFormFieldModule,
   MatInputModule,
-  MatRippleModule, MatToolbarModule, MatIconModule, MatButtonModule, MatListModule, MatMenuModule } from '@angular/material';
+  MatRippleModule, MatToolbarModule, MatIconModule, MatButtonModule, MatListModule, MatMenuModule, MatSnackBarModule } from '@angular/material';
 
 @NgModule({
   imports: [
     MatMenuModule,
     MatListModule,
+    MatSnackBarModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,

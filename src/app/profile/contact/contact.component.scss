@@ -1,4 +1,5 @@
 .contact-section {
+    height: 70%;
     background: transparent;
     color: #fff;
     text-align: center;
@@ -43,12 +44,11 @@
     cursor: pointer; }
   
   button:hover {
-    background-color: #c1cdca;
+    background-color: #b1c2ca;
     transition: background-color 0.3s ease-in; }
   
   input:focus,
   textarea:focus,
   button:focus {
     outline: none;
-    background-color: #c1cdca;
     transition: background-color 0.3s ease-in; }

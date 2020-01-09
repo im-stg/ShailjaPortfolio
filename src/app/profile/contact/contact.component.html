@@ -1,14 +1,14 @@
-<div  id="contact" style = "  background-image: url('assets/images/background.png');
+<div   id="contact" style = "  background-image: url('assets/images/background.png');
   background-color: rgb(220, 226, 228); 
   background-blend-mode:soft-light;">
         <div class="cc-contact-information" >
             <div class="cc-contact">          
               <div class="col-md-9">
-                  <h3>Lets connect! Would love to hear about your project ideas or thoughts what we might build together!</h3>
+                  <h5>Lets connect! Would love to hear about your project ideas or thoughts what we might build together!</h5>
                   
                   <section id="contact" class="contact-section" >
                     
-                              <div class="contact-form">
+                              <!-- <div class="contact-form"> -->
                               <form [formGroup]="contactForm">
                                 <input  matInput type="email" name="myEmail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required formControlName="Email" #Email ngDefaultControl 
                                   placeholder="Your email"
@@ -21,11 +21,11 @@
                                   class="bgcolor"
                                   required
                                 ></textarea>
-                                <button type="submit"  class="bgcolor"  (click)="sendData( 
+                                <button mat-button type="submit"  class="bgcolor"  (click)="sendData( 
                                    Description.value, Email.value);"  >Send Message</button>
 
                               </form>
-                            </div>
+                            <!-- </div> -->
                           </section>  
                          
       
