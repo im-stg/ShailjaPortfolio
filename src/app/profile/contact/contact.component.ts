@@ -12,7 +12,8 @@ import { MatSnackBar } from '@angular/material';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
-  
+  visible = false;  
+  message: string;
 
   constructor( private fb: FormBuilder, private router: Router, private snackBar : MatSnackBar, private messageService: ContactMessageService) 
     { 
@@ -29,15 +30,28 @@ export class ContactComponent implements OnInit {
      
    sendData(description,mail){
 
-    console.log(description,mail);
-
+    console.log(" hello" + description,mail);
+    this.visible = true; 
     this.messageService.sendMail(description,mail);
   
 
     setTimeout(()=> {
       this.contactForm.reset();  
-                  
      }, 500);
+
+     
+    setTimeout(()=> {
+          this.visible = false; 
+
+     }, 3500);
+
+     if(description === "" || mail ==="" ||description === " " || mail ===" ")
+     {
+              this.message = "Your form is empty, please fill it before sending!";
+     }
+     else{
+       this.message = "Your message is delivered!";
+     }
 
 
     //  var msg = 'Your message is delivered to Shailja!';
