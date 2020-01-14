@@ -142,7 +142,7 @@ fieldset[disabled]
   min-width: 2.375rem;
   width: 2.375rem;
   padding: 0;
-  font-size: 0.9375rem;
+  font-size: 2rem;
   overflow: hidden;
   position: relative;
   line-height: normal;
@@ -4939,10 +4939,6 @@ img {
 
 /* Experience Style */
 .cc-experience .cc-experience-header {
-  padding-top: 60px;
-  padding-right: 0;
-  text-align: center;
-  color: #fff;
   text-transform: uppercase;
 }
 
@@ -4950,12 +4946,16 @@ img {
 .cc-education .h5 {
   margin-bottom: 0;
 }
-
+.cc-experience .cc-experience-header,
 .cc-education .cc-education-header {
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
   color: #fff;
+}
+
+.cc-education {
+  padding-top: 70px;
 }
 
 /* References Style */
@@ -5008,6 +5008,7 @@ img {
 
 .cc-contact-information .cc-contact {
   padding: 8% 0 8% 20%;
+  margin-top: 30px;
 }
 
 @media (max-width: 767px) {
@@ -5045,4 +5046,8 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0;
+}
+
+.btn-icon{
+  background-color: #fff;
 }
